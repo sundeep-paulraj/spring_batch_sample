@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Check current batch job versions') {
             steps {
-                sh 'mvn --version'
+                echo " Command to check the batch job version "
             }
         }
         stage('Deploying all the batch jobs') {
             steps {
-                sh 'Deploy all the batch jobs and display the output'
+                echo " command to deploy the batch jobs"
             }
         }
     }
